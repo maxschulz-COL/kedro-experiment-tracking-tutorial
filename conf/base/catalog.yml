@@ -69,3 +69,20 @@ regressor:
   type: pickle.PickleDataSet
   filepath: data/06_models/regressor.pickle
   versioned: true
+
+metrics:
+  type: tracking.MetricsDataSet
+  filepath: data/09_tracking/metrics.json
+
+companies_columns:
+  type: tracking.JSONDataSet
+  filepath: data/09_tracking/companies_columns.json
+
+run_parameters:
+  type: tracking.JSONDataSet
+  filepath: data/09_tracking/run_parameters.json
+
+confusion_matrix:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/09_tracking/confusion_matrix.png
+  versioned: true
